@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Calculation {
 
 	// 팩토리얼 계산값을 리턴해주는 static factorial() 선언
-	public static int factorial(int n) {
+	static int factorial(int n) {
 
 		// n이 1이면 n을 리턴한다
 		if (n == 1) {
@@ -20,7 +20,7 @@ public class Calculation {
 	}
 
 	// 1 부터 n 까지의 수를 차례대로 출력하는 static show() 메소드 선언
-	public static void show(int n) {
+	static void show(int n) {
 
 		// n이 1이면 n을 출력한다
 		if (n == 1) {
@@ -59,9 +59,12 @@ public class Calculation {
 
 		// 팩토리얼 값 출력
 		System.out.println("factorial(" + n + ") = " + Calculation.factorial(n));
+
 		// show() 실행
 		System.out.print("show(" + n + ") = ");
 		Calculation.show(n);
+
+		sc.close();
 
 	}
 
